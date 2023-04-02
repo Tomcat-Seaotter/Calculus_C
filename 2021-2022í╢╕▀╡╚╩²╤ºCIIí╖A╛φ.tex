@@ -1,0 +1,370 @@
+% !TEX encode = UTF-8
+% !TEX program = xelatex
+\documentclass{NBUTExam}
+\usepackage{ctex}
+%\usepackage{CJK}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage[mathdesign]{varint}
+
+\answerfalse %不显示答案
+
+
+%数学符号规定
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\dis}{\displaystyle}
+
+\newcommand{\cov}{\operatorname{cov}}
+
+
+%试卷名称
+\renewcommand{\niandu}{2021--2022}		 %学年
+\renewcommand{\xueqi}{2}                 %第几学期
+\renewcommand{\kecheng}{《高等数学CII》}   %课程名称
+\renewcommand{\shijuan}{A卷}              %若为期中，注释掉;若为参考答案补上
+\renewcommand{\qmz}{期末}  				%期末or期中
+\renewcommand{\duixiang}{汽服21-4，5，6班； 网络21-3，4班}  %适用班级
+\renewcommand{\kstime}{120}  			%考试时间
+
+\setcounter{TotalPart}{5}				%大题数量
+
+\renewcommand{\baselinestretch}{1.5}
+
+%大题分值设置
+\renewcommand{\fenyi}{20}
+\renewcommand{\fener}{20}
+\renewcommand{\fensan}{28}
+\renewcommand{\fensi}{18}
+\renewcommand{\fenwu}{14}
+%\renewcommand{\fenliu}{15}
+%\renewcommand{\fenqi}{15}
+
+%页眉页脚设置
+\pagestyle{fancy} 
+\fancyhead[C]{\small 宁波工程学院{\qmz}试卷}
+\renewcommand{\headrulewidth}{0.4pt}%改为0pt即可去掉页眉下面的横线
+\cfoot{\kecheng \shijuan \quad 第~\thepage~页~共~\pageref{LastPage}~页} 
+
+\begin{document}
+
+\mifengxian
+
+\vspace{-1em}
+
+\biaotou
+\jifenbiao
+
+
+\vspace{2em}
+\makepart{填空题}{\small \bfseries 共~10~小题，每小题~2~分，共~20~分}
+
+\vspace{1em}
+
+\begin{problem}
+在空间直角坐标系中,点$(4,5,13)$到点$(1,1,1)$的距离为\fillin{$13$}.
+\end{problem}
+\vspace{1em}
+
+\begin{problem}
+二元函数极限$\dis \lim_{\left( x,y \right) \rightarrow \left( 0,3 \right)} \frac{\sin xy}{x}=$\fillin{$3$}.
+\end{problem}
+\vspace{1em}
+
+\begin{problem}
+设二元函数$z=x^2y^3$,则偏导数$\dis \frac{\partial z}{\partial y}=$\fillin{$3x^2y^2$}.
+\end{problem}
+\vspace{1em}
+
+\begin{problem}
+设二元函数$z=\e^{xy}$,则二阶偏导数$\dis \frac{\partial^2 z}{\partial x^2}=$\fillin{$y^2\e^{xy}$}.
+\end{problem}
+\vspace{1em}
+
+\begin{problem}
+设平面区域$D$由圆$x^2+y^2=9$所围,则二重积分$\dis \iint\limits_D\d x\d y=$\fillin{$9\pi$}.
+\end{problem}
+\vspace{1em}
+
+\begin{problem}
+二次积分$\dis \int_{-1}^1{\mathrm{d}x}\int_{x^2}^1{f\left( x,y \right) \mathrm{d}y}$交换积分次序为\fillin{$\dis \int_0^1{\mathrm{d}y}\int_{-\sqrt{y}}^{\sqrt{y}}{f\left( x,y \right) \mathrm{d}x}$}.
+\end{problem}
+\vspace{1em}
+
+\begin{problem}
+幂级数$\dis \sum_{n=1}^{+\infty}{\frac{x^n}{n}}$的收敛半径$R=$\fillin{$1$}.
+\end{problem}
+\vspace{1em}
+
+\begin{problem}
+函数$f(x)=\e^{-x}$在$x=0$处的幂级数展开式为\fillin{$\dis \sum_{n=0}^{+\infty}{\frac{\left( -1 \right) ^nx^n}{n!}}$}.
+\end{problem}
+\vspace{1.5em}
+
+\begin{problem}
+微分方程$y''-3y'+2y=0$的通解为$y=$\fillin{$C_1\e^{2x}+C_2\e^x$}.
+\end{problem}
+\vspace{1.5em}
+
+\begin{problem}
+差分方程$y_{t+1}-4y_{t}=0$的通解为$y_t=$\fillin{$C4^{t}$}.
+\end{problem}
+
+\newpage
+\makepart{单项选择题}{\small \bfseries 共~10~小题，每小题~2~分，共~20~分}
+
+\begin{problem}
+下列方程中,表示球面的为 \pickout{B}
+\vspace{0em}
+\options{$x^2+y^2=1$}
+	{$x^2+y^2+z^2=1$}
+	{$z=x^2+y^2$}
+	{$z^2=x^2+y^2$}
+\end{problem}
+
+\vspace{-1.5em}
+\begin{problem}
+设二元函数$z=x\arctan y$,则在点$(0,0)$处有$\dis \frac{\partial^2 z}{\partial x \partial y}-\frac{\partial^2 z}{\partial y \partial x}=$ \pickout{A}
+\vspace{0.5em}
+\options{$0$}
+	{$1$}
+	{$-1$}
+	{$\dis \frac{1}{2}$}
+\end{problem}
+
+\begin{problem}
+设二元函数$z=f(xy,x+y)$,则$\dis \frac{\partial z}{\partial x}=$ \pickout{D}
+\vspace{0.5em}
+\options{$xf_1'+yf_2'$}
+	{$yf_1'+xf_2'$}
+	{$f_1'+xf_2'$}
+	{$yf_1'+f_2'$}
+\end{problem}
+
+\begin{problem}
+点$(0,0)$是函数$z=xy$的 \pickout{B}
+\vspace{0.5em}
+\options{非驻点,非极值点}
+	{驻点,非极值点}
+	{极大值点}
+	{极小值点}
+\end{problem}
+\vspace{-1.5em}
+\begin{problem}
+下列反常积分中收敛的为 \pickout{C}
+\vspace{0.5em}
+\options{$\dis \int_0^1{\frac{1}{x^2}\mathrm{d}x}$}
+	{$\dis \int_1^{+\infty}{\frac{1}{x}\mathrm{d}x}$}
+	{$\dis \int_0^{+\infty}{\frac{1}{1+x^2}\mathrm{d}x}$}
+	{$\dis \int_2^{+\infty}{\frac{1}{x\ln x}\mathrm{d}x}$}
+\end{problem}
+\vspace{0.5em}
+\begin{problem}
+曲线$y=\sin x(0\leqslant x\leqslant \pi)$与$x$轴所围的图形绕$x$轴旋转一周所得立体的体积为 \pickout{C}
+\vspace{0.5em}
+\options{$\pi^2$}
+	{$\pi$}
+	{$\dis \frac{\pi^2}{2}$}
+	{$\dis \frac{\pi}{2}$}
+\end{problem}
+
+\begin{problem}
+直角坐标系下的二次积分$\dis \int_0^1{\d x}\int_0^{\sqrt{1-x^2}}{f(x,y) \d y}$化为极坐标系下的二次积分为 \pickout{A}
+\vspace{0.5em}
+\options{$\dis \int_0^{\frac{\pi}{2}}{\d \theta}\int_0^1{f(\rho \cos \theta ,\rho \sin \theta) \rho \d \rho}$}
+	{$\dis \int_0^{\pi}{\d \theta}\int_0^1{f(\rho \cos \theta ,\rho \sin \theta) \rho \d \rho}$}
+	{$\dis \int_0^{\frac{\pi}{2}}{\d \theta}\int_0^1{f(\rho \cos \theta ,\rho \sin \theta) \d \rho}$}
+	{$\dis \int_0^{\pi}{\d \theta}\int_0^1{f(\rho \cos \theta ,\rho \sin \theta) \d \rho}$}
+\end{problem}
+\vspace{-0.5em}
+\begin{problem}
+平面区域$D=\left\{(x,y)\Big||x|+|y|\leqslant1\right\}$,$D_1=\left\{(x,y)\Big|x+y\leqslant1,x\geqslant 0,y\geqslant 0\right\}$,则下列结论正确的为 \pickout{C}
+\vspace{0.5em}
+\options
+{$\dis \iint\limits_D{(x^2+y^2) \d\sigma}=\iint\limits_{D_1}{(x^2+y^2) \d\sigma}$}
+{$\dis \iint\limits_D{(x^2+y^2) \d\sigma}=2\iint\limits_{D_1}{(x^2+y^2) \d\sigma}$}
+{$\dis \iint\limits_D{(x^2+y^2) \d\sigma}=4\iint\limits_{D_1}{(x^2+y^2) \d\sigma}$}
+{$\dis \iint\limits_D{(x^2+y^2) \d\sigma}=0$}
+\end{problem}
+
+\vspace{-0.5em}
+\begin{problem}
+下列常数项级数中发散的为 \pickout{B}
+\vspace{0.5em}
+\options{$\dis \sum_{n=1}^{+\infty}{\frac{1}{n^2}}$}
+	{$\dis \sum_{n=1}^{+\infty}{\sin n}$}
+	{$\dis \sum_{n=1}^{+\infty}{\frac{n}{2^n}}$}
+	{$\dis \sum_{n=1}^{+\infty}{(-1)^n\frac{1}{n}}$}
+\end{problem}
+\vspace{0.5em}
+\begin{problem}
+微分方程$\dis 2yy'=\cos x$的通解为 \pickout{C}
+\vspace{0.5em}
+\options{$\dis y=C$}
+	{$\dis y^2=\sin x$}
+	{$\dis y^2=\sin x+C$}
+	{$\dis y^2=\cos x+C$}
+\end{problem}
+
+\newpage
+\makepart{解答题}{\small \bfseries 共~4~小题，每小题~7~分，共~28~分}
+
+\begin{problem}
+已知二元函数$z=x+xy+xy^2$,求该函数的二阶偏导数$\dis \frac{\partial ^2z}{\partial x^2},\frac{\partial ^2z}{\partial x\partial y},\frac{\partial ^2z}{\partial y^2}$.
+\end{problem}
+\vspace{0.5em}
+
+\begin{solution}
+$\dis \frac{\partial z}{\partial x}=1+y+y^2,\frac{\partial z}{\partial y}=x+2xy$
+ \dotfill 4分 \par
+\vspace{0.5em}
+
+$\dis \frac{\partial ^2z}{\partial x^2}=0,\frac{\partial ^2z}{\partial x\partial y}=1+2y,\frac{\partial ^2z}{\partial y^2}=2x$
+ \dotfill 7分 \par
+\end{solution}
+\vspace{12em}
+\begin{problem}
+二元函数$z=f(x,y)$由方程$z+\e^z=xy+y^3$所确定,求一阶偏导数$\dis \frac{\partial z}{\partial x},\frac{\partial z}{\partial y}$.
+\end{problem}
+\vspace{0.5em}
+\begin{solution}
+令$F(x,y,z)=z+\e^z-xy-y^3$
+ \dotfill 2分 \par
+\vspace{0.5em}
+
+则有$F_x=-y,F_y=-x-3y^2,F_z=1+\e^z$
+ \dotfill 5分 \par
+\vspace{0.5em}
+
+所以$\dis \frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=\frac{y}{1+\e^z},\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}=\frac{x+3y^2}{1+\e^z}$
+ \dotfill 7分 \par
+\end{solution}
+
+\vspace{12em}
+\begin{problem}
+三元函数$u(x,y,z)=\ln(x+xy+xyz)$,求该函数的全微分$\d u$.
+\end{problem}
+\vspace{1em}
+\begin{solution}
+一阶偏导数分别为$\dis u_x=\frac{1+y+yz}{x+xy+xyz}=\frac{1}{x}$,\par
+$\dis u_y=\frac{1+z}{1+y+yz},u_z=\frac{y}{1+y+yz}$
+ \dotfill 4分 \par
+\vspace{0.5em}
+
+则有$\dis \d u=u_x\d x+u_y\d y+u_z\d z$\par 
+\vspace{0.5em}
+\qquad \qquad $\dis =\frac{1}{x}\d x+\frac{1+z}{1+y+yz}\d y+\frac{y}{1+y+yz}\d z$
+ \dotfill 7分 \par
+\end{solution}
+
+\vspace{12em}
+\begin{problem}
+求二元函数$z=2x^3-y^3+3x^2y+x^2+x$的极值.
+\end{problem}
+\vspace{1em}
+\begin{solution}
+由$\dis z_x=6x^2+6xy+2x+1=0,z_y=-3y^2+3x^2=0$,\par
+\vspace{0.5em}
+得驻点$\dis (-\frac{1}{2},\frac{1}{2})$\dotfill 2分 \par
+\vspace{0.5em}
+在驻点$\dis (-\frac{1}{2},\frac{1}{2})$处，\par
+\vspace{0.5em}
+有 $A=z_{xx}=12x+6y+2=-1,B=z_{xy}=6x=-3,C=z_{yy}=-6y=-3$\dotfill 5分\par
+\vspace{0.5em}
+则有$AC-B^2<0$,所以该函数无极值.\dotfill 7分 \par
+\end{solution}
+
+\newpage
+\makepart{解答题}{\small \bfseries 共~3~小题，每小题~6~分，共~18~分}
+
+\begin{problem}
+计算二重积分$\dis \iint\limits_D{xy\mathrm{d}\sigma}$,其中$D$为由曲线$y=x^2$及直线$y=x$所围闭区域.
+\end{problem}
+\vspace{0.5em}
+
+\begin{solution}
+平面区域$D$的不等式表示为$0\leqslant x\leqslant 1,x^2\leqslant y \leqslant x$
+ \dotfill 2分 \par
+\vspace{0.5em}
+
+则原式$\dis =\int_0^1\d x\int_{x^2}^x xy\d y =\int_0^1 \frac{1}{2}(x^3-x^5)\d x$ \dotfill 4分 \par
+\vspace{0.5em}
+\qquad \quad $\dis =\frac{1}{2}\left(\frac{1}{4}-\frac{1}{6}\right)=\frac{1}{24}$ \dotfill 6分 \par
+\end{solution}
+\vspace{17em}
+
+\begin{problem}
+计算二重积分$\dis \iint\limits_D{\e^{x^2+y^2}\d\sigma}$,其中$D$为圆$x^2+y^2\leqslant 4$位于$x$轴上方部分的闭区域.
+\end{problem}
+\vspace{0.5em}
+
+\begin{solution}
+平面区域$D$在极坐标系下的不等式表示为$0\leqslant \theta \leqslant \pi,0\leqslant \rho \leqslant 2$
+ \dotfill 2分 \par
+\vspace{0.5em}
+
+则原式$\dis =\int_0^\pi \d \theta \int_{0}^2 \rho \e^{\rho^2}\d \rho =\frac{1}{2}\int_0^\pi (\e^4-1)\d \theta$ \dotfill 4分 \par
+\vspace{0.5em}
+\qquad \quad $\dis =\frac{\pi}{2} (\e^4-1)$ \dotfill 6分 \par
+\end{solution}
+\vspace{17em}
+
+\begin{problem}
+求一阶线性微分方程$\dis y'+2xy=x\e^{-x^2}$的通解.
+\end{problem}
+\vspace{0.5em}
+
+\begin{solution}
+$\dis P(x)=2x,Q(x)=x\e^{-x^2}$
+  \par
+\vspace{0.5em}
+
+则通解为$\dis y=\e^{-\int{P(x) \d x}}\left(\int{Q(x) \e^{\int{P(x)\d x}}\d x}+C\right)$  \dotfill 2分 \par
+\vspace{0.5em}
+\qquad \qquad $~~\dis =\e^{-\int{2x\d x}}\left( \int{x\e^{-x^2}\e^{\int{2x\d x}}\d x}+C \right) $ \dotfill 4分 \par
+\vspace{0.5em}
+\qquad \qquad $~~\dis =\e^{-x^2}\left( \int{x\d x}+C \right)=\e^{-x^2}\left(\frac{1}{2}x^2+C \right) $ \dotfill 6分 \par
+\vspace{0.5em}
+\end{solution}
+
+\newpage
+\makepart{解答题}{\small \bfseries 共~2~小题，每小题~7~分，共~14~分}
+\mifengxian
+
+\begin{problem}
+平面闭区域$D$由曲线$\dis y=\frac{1}{x}$及直线$y=x$和$x=2$所围成,而$\Omega$为$D$绕$x$轴旋转一周所得立体,试计算$D$的面积以及$\Omega$的体积.
+\end{problem}
+\vspace{0.5em}
+
+\begin{solution}
+自变量的范围为$x=1$到$x=2$
+ \dotfill 2分 \par
+\vspace{0.5em}
+
+$D$的面积为$\dis S=\int_1^2 \left(x-\frac{1}{x}\right)\d x=\frac{3}{2}-\ln2$ \dotfill 5分 \par
+\vspace{0.5em}
+$\Omega$的体积为$\dis V=\pi\int_1^2 \left(x^2-\frac{1}{x^2}\right)\d x=\frac{11\pi}{6}$ \dotfill 7分 \par
+\vspace{0.5em}
+\end{solution}
+\vspace{22em}
+
+\begin{problem}
+计算幂级数$\dis \sum_{n=1}^{+\infty}{\frac{x^{2n-1}}{2n-1}}$在其收敛域$(-1,1)$上的和函数,并依此结果计算$\dis \sum_{n=1}^{+\infty}{\frac{1}{4^n\left( 2n-1 \right)}}$的和.
+\end{problem}
+\vspace{0.5em}
+
+\begin{solution}
+设和函数$\dis S(x) =\sum_{n=1}^{+\infty}{\frac{x^{2n-1}}{2n-1}}$
+ \par
+\vspace{0.5em}
+则有$\dis S'(x) =\sum_{n=1}^{+\infty}{x^{2n-2}}=\frac{1}{1-x^2}$
+\dotfill 3分 \par
+\vspace{0.5em}
+所以$\dis S(x) =\int_0^x{\frac{1}{1-t^2}}\mathrm{d}t=\frac{1}{2}\ln \frac{1+x}{1-x}\left(x\in(-1,1)\right)$\dotfill 5分 \par
+\vspace{0.5em}
+进而有$\dis \sum_{n=1}^{+\infty}{\frac{1}{4^n\left( 2n-1 \right)}}=\frac{1}{2}\sum_{n=1}^{+\infty}{\frac{1}{2^{2n-1}\left( 2n-1 \right)}}=\frac{1}{2}S\left( \frac{1}{2} \right) =\frac{1}{4}\ln 3$\dotfill 7分 \par
+\vspace{0.5em}
+\end{solution}
+\vspace{2em}
+
+\end{document}
